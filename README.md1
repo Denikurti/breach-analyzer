@@ -1,0 +1,17 @@
+# 🕵️‍♂️ Web Tracker
+
+A lightweight Python tool to analyze access logs and detect suspicious login activity like brute-force attacks, honeypot triggers, and login path scanning.
+
+---
+
+## 🔍 What It Does
+
+- ✅ Count visits to each endpoint
+- 🚨 Detect burst login attempts from single IPs
+- 🌍 Flag suspicious IPs by country (mocked)
+- 📁 Export to CSV reports
+
+---
+
+## 🗂 Project Structure
+
