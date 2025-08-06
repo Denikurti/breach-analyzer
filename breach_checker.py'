@@ -1,0 +1,18 @@
+import pandas as pd
+
+# Load the list of emails to check
+emails_df = pd.read_csv("emails_to_check.csv")
+
+# Load the breach dataset
+breach_df = pd.read_csv("simulated_breach_data.csv")
+
+# Merge on email to find matches
+matched_df = pd.merge(emails_df, breach_df, on="email", how="inner")
+
+print("✅ Breached Emails Found:\n")
+print(matched_df)
+
+# Save results
+matched_df.to_csv("breached_emails_found.csv", index=False)
+print("\n📁 Results saved to 'breached_emails_found.csv'")
+
